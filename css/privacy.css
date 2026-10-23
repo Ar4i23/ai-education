@@ -1,0 +1,7 @@
+@import url("./offer.css");
+/* Policy page reuses the offer page and current website design tokens. */
+.privacy-header { justify-content: flex-end; }
+.privacy-notice { margin: 0 0 28px; padding: 18px 22px; border-radius: var(--radius-md); border: 1px solid var(--color-yellow); background: rgba(240,217,107,.12); color: #fff5c5; line-height: 1.65; }
+.privacy-review { padding: 12px 16px; border-left: 3px solid var(--color-yellow); background: rgba(240,217,107,.10); border-radius: 8px; }
+.privacy-review-inline { border-bottom: 1px dashed var(--color-yellow); color: #fff5c5; }
+@media print { .privacy-notice { display: none; } .privacy-review { color: #222 !important; background: #eee; } }

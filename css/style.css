@@ -7,3 +7,7 @@
 @import "bottom-row.css";
 @import "bonuses.css"; /* <-- Добавлено */
 @import "responsive.css";
+
+@import "legal-links.css";
+
+@import "brand.css";

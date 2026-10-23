@@ -1,0 +1,87 @@
+/* Antonova AI: shared header branding */
+.antonova-brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  line-height: 0;
+}
+.antonova-brand img {
+  display: block;
+  width: 44px;
+  height: auto;
+  object-fit: contain;
+}
+.hero-wrap__header {
+  display: grid;
+  grid-template-columns: minmax(112px, 1fr) auto minmax(112px, 1fr);
+  align-items: center;
+  gap: 16px;
+}
+.hero-wrap__header > .antonova-brand {
+  justify-self: start;
+}
+.hero-wrap__header > .hero-wrap__nav {
+  justify-self: center;
+}
+.hero-wrap__header > .hero-wrap__header-btn {
+  justify-self: end;
+}
+/* Legal pages: logo always stays at the left edge, back link at the right. */
+.offer-header,
+.offer-header.privacy-header,
+.error-page__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.offer-header > .antonova-brand,
+.error-page__header > .antonova-brand {
+  margin-right: auto;
+}
+.offer-header > .offer-back {
+  margin-left: auto;
+}
+@media (max-width: 1080px) {
+  .hero-wrap__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .hero-wrap__header > .hero-wrap__header-btn {
+    margin-left: auto;
+  }
+  .antonova-brand img {
+    width: 94px;
+    height: 78px;
+  }
+}
+@media (max-width: 700px) {
+  .offer-header,
+  .offer-header.privacy-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .offer-header > .offer-back {
+    align-self: center;
+  }
+}
+@media (max-width: 480px) {
+  .antonova-brand img {
+    width: 76px;
+    height: 64px;
+  }
+  .offer-header,
+  .offer-header.privacy-header,
+  .error-page__header {
+    gap: 10px;
+    padding: 12px 14px;
+  }
+  .offer-back {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+}

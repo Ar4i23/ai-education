@@ -40,8 +40,8 @@
     <meta name="twitter:image" content="https://antonovaai.ru/img/ava.png" />
 
     <!-- Иконки сайта -->
-    <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
 
     <!-- CANONICAL [ДОБАВЛЕНО]: говорит поисковикам, что главная версия страницы —
          одна. Без него antonovaai.ru и antonovaai.ru/index.html могли считаться
@@ -122,7 +122,9 @@
         ]
       }
     </script>
-  </head>
+    <link rel="stylesheet" href="/css/brand.css" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+</head>
 
   <body>
     <!-- ===== ОБЩИЙ КОНТЕЙНЕР СТРАНИЦЫ ===== -->
@@ -134,7 +136,8 @@
         <!-- Меню навигации с логотипом-текстом и кнопкой записи -->
         <!-- ===== HEADER (навигация) ===== -->
         <header class="hero-wrap__header">
-          <nav class="hero-wrap__nav" id="siteNav" aria-label="Основная навигация">
+          <a class="antonova-brand" href="index.html" aria-label="Antonova AI — на главную"><img src="/img/antonova-ai-logo.png" alt="Antonova AI" width="112" height="94" /></a>
+        <nav class="hero-wrap__nav" id="siteNav" aria-label="Основная навигация">
             <a href="#" class="hero-wrap__nav-link hero-wrap__nav-link--active"
               >Главная</a
             >
@@ -1193,6 +1196,7 @@
       </section>
     </div>
 
+    <footer class="site-legal"><a href="offer.html">Публичная оферта</a></footer>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
