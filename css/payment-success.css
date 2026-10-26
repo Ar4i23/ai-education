@@ -1,0 +1,24 @@
+@import url("./reset.css");
+@import url("./variables.css");
+/* Payment return page — uses the same design tokens as the Antonova AI website. */
+.payment-success__layout { width: min(100% - 36px, 1140px); min-height: 100vh; margin: 0 auto; display: flex; flex-direction: column; padding: 20px 0 24px; }
+.payment-success__header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 28px; border-radius: var(--radius-lg); background: var(--color-bg-wrap); }
+.payment-success__brand { display: inline-flex; align-items: center; }
+.payment-success__brand img { width: 100px; height: 72px; object-fit: contain; }
+.payment-success__home { color: var(--color-dark-btn); background: var(--color-yellow); padding: 11px 20px; border-radius: var(--radius-btn); font-weight: 700; font-size: 14px; transition: background var(--transition); }
+.payment-success__home:hover { background: var(--color-yellow-hover); }
+.payment-success__main { flex: 1; display: grid; place-items: center; padding: 48px 0; }
+.payment-success__card { width: min(100%, 690px); padding: clamp(30px, 6vw, 72px); border-radius: 32px; background: var(--color-bg-wrap); text-align: center; box-shadow: var(--shadow-card); }
+.payment-success__icon { width: 100px; height: 100px; display: grid; place-items: center; margin: 0 auto 28px; border-radius: 50%; background: var(--color-yellow); color: var(--color-dark-btn); }
+.payment-success__eyebrow { color: var(--color-yellow); font-size: 12px; font-weight: 800; letter-spacing: .16em; }
+.payment-success__card h1 { font-size: clamp(32px, 5.5vw, 56px); line-height: 1.12; letter-spacing: -.04em; font-weight: 800; margin: 16px 0 20px; }
+.payment-success__lead { font-size: clamp(17px, 2.2vw, 21px); font-weight: 600; margin: 0 auto 14px; max-width: 500px; }
+.payment-success__description { font-size: 16px; line-height: 1.75; color: var(--color-text-muted); max-width: 500px; margin: 0 auto; }
+.payment-success__button { display: inline-flex; justify-content: center; align-items: center; gap: 12px; margin: 34px auto 0; min-height: 58px; padding: 16px 30px; background: var(--color-yellow); color: var(--color-dark-btn); font-size: 16px; font-weight: 800; border-radius: var(--radius-btn); transition: transform var(--transition), background var(--transition); }
+.payment-success__button:hover { transform: translateY(-2px); background: var(--color-yellow-hover); }
+.payment-success__button:focus-visible, .payment-success__home:focus-visible, .payment-success__footer a:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+.payment-success__note { color: var(--color-text-muted); max-width: 480px; font-size: 13px; line-height: 1.65; margin: 26px auto 0; }
+.payment-success__footer { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; color: var(--color-text-muted); font-size: 13px; padding: 16px 8px; }
+.payment-success__footer div { display: flex; gap: 20px; flex-wrap: wrap; }
+.payment-success__footer a:hover { color: var(--color-yellow); }
+@media (max-width: 600px) { .payment-success__layout { width: min(100% - 24px, 1140px); padding-top: 12px; } .payment-success__header { padding: 10px 16px; } .payment-success__brand img { width: 80px; height: 60px; } .payment-success__home { padding: 10px 14px; font-size: 12px; } .payment-success__main { padding: 24px 0; } .payment-success__card { border-radius: 24px; padding: 36px 22px; } .payment-success__icon { width: 80px; height: 80px; } .payment-success__button { width: 100%; padding: 16px 12px; font-size: 14px; } .payment-success__footer { justify-content: center; text-align: center; } }

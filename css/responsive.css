@@ -116,16 +116,6 @@
     background: #fff;
   }
 
-  /* Hero - Header button */
-  .hero-wrap__header-btn {
-    position: relative;
-    z-index: 2;
-    min-width: 120px;
-    min-height: 40px;
-    padding: 0 16px;
-    font-size: 13px;
-  }
-
   /* Hero - Body */
   .hero-wrap__body {
     display: flex;
