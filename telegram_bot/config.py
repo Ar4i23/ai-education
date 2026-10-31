@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv(Path(__file__).with_name(".env"))
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
-PRICE = os.getenv("PRICE", "2499").strip()
+PRICE = os.getenv("PRICE", "3499").strip()
 CURRENCY = os.getenv("CURRENCY", "руб").strip()
 COURSE_LINK = os.getenv("COURSE_LINK", "").strip()
 SUPPORT_USERNAME = os.getenv("SUPPORT_USERNAME", "").strip().lstrip("@")
