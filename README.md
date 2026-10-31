@@ -1,5 +1,7 @@
 # Antonova AI — сайт курса и Telegram-бот
 
+![Antonova AI Preview](./docs/site-preview.png)
+
 🌐 https://antonovaai.ru/
 🤖 [@antonovaai_multiki_bot](https://t.me/antonovaai_multiki_bot)
 
