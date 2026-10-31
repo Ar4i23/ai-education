@@ -1,36 +1,25 @@
-# СЕКРЕТНЫЕ ДАННЫЕ
+# Secrets and runtime data (never commit)
 .env
+**/.env
 .env.local
+**/.env.local
 .env.*.local
-
-# PYTHON
-venv/
-env/
-ENV/
+**/.env.*.local
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.pem
+*.key
+*.p12
+*.pfx
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-*.pyd
-
-# MACOS
-.DS_Store
-.DS_Store?
-.AppleDouble
-.LSOverride
-._*
-
-# РЕДАКТОРЫ
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# ЛОГИ
-*.log
-npm-debug.log*
-yarn-debug.log*
-
-# NODE
+.venv/
+venv/
 node_modules/
+.DS_Store
+._*
+__MACOSX/
+*.log
